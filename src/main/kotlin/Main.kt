@@ -1,7 +1,22 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+class Articulo(val nombre:String ,  precio:Number){
+    val precio = precio.toDouble()
+    init {
+        generarId()
+    }
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    override fun toString(): String {
+        return "$id"
+    }
+    companion object
+        var id = 0
+        fun generarId(){
+         id++
+        }
 }
+
+
+fun main(){
+    val art1 = Articulo()
+
+}
+
