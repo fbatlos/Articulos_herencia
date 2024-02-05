@@ -16,7 +16,10 @@ class Articulo(val nombre:String ,  precio:Number){
 
 
 fun main(){
-    val art1 = Articulo()
+    val art1 = Articulo("pan" , 12)
+    println(art1.toString())
+    val art2 = Articulo("cebolla" , 12)
+    println(art2.toString())
 
 }
 
